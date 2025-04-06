@@ -59,7 +59,7 @@ client.on('messageCreate', async (message) => {
     const response = await openai.chat.completions.create({
       model: process.env.OPENAI_MODEL,
       messages: cleanHistory,
-      max_tokens: 500,
+      max_tokens: 1500,
     })
 
     const replyText =
